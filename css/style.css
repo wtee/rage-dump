@@ -1,0 +1,167 @@
+/* === Layout === */
+
+* {
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+textarea,
+button {
+  border-radius:5px;
+}
+
+button {
+  padding: 0.5em 2em;
+}
+
+#rage-text {
+  width: 80%;
+  height: 4em;
+  padding-top:0.25em;
+  margin-bottom: 1em;
+  text-align:left;
+}
+
+/* === Color === */
+
+body {
+  background-color: #00bfff;
+}
+
+header {
+  color: #f0f8ff;
+}
+
+button,
+#rage-text {
+  background-color: #f0f8ff;
+  color: #191970;
+}
+
+#output p {
+  color: #f0f8ff;
+}
+
+/* === Typography === */
+
+@font-face {
+  font-family: "Junction";
+  src: url(../fonts/junction-regular.woff);
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url(../fonts/Spartan.woff);
+}
+
+* {
+  font-family: "Junction", sans-serif;
+}
+
+h1  {
+  font-family: "Spartan", sans-serif;
+  font-size: 6.96em;
+}
+
+h2,
+#output p {
+  font-size: 2.5em;
+}
+
+button,
+textarea {
+  font-family: inherit;
+  font-size: 1.5em;
+}
+
+/* === Animation === */
+
+@keyframes fade-out {
+  0% {
+      opacity: 0;
+    }
+
+  25% {
+    opacity:1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+      opacity: 0;
+    }
+
+  25% {
+    opacity:1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@-o-keyframes fade-out {
+  0% {
+      opacity: 0;
+    }
+
+  25% {
+    opacity:1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@-moz-keyframes fade-out {
+  0% {
+      opacity: 0;
+    }
+
+  25% {
+    opacity:1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-duration: 6s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+
+  -moz-animation-name: fade-out;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-duration: 6s;
+  -moz-animation-direction: normal;
+  -moz-animation-fill-mode: forwards;
+
+  -webkit-animation-name: fade-out;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+
+  -o-animation-name: fade-out;
+  -o-animation-timing-function: ease-out;
+  -o-animation-iteration-count: 1;
+  -o-animation-duration: 6s;
+  -o-animation-direction: normal;
+  -o-animation-fill-mode: forwards;
+}
